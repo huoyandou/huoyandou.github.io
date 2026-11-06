@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZHANG Hanrui | Personal Website</title>
+  <style>
+:root {
+  --bg: #f6f1e8;
+  --ink: #1d2a2f;
+  --muted: #5b6b72;
+  --card: #fffdf8;
+  --accent: #0f766e;
+  --accent-soft: #d9f3ef;
+  --shadow: 0 12px 40px rgba(29, 42, 47, 0.08);
+  --radius: 18px;
+  font-family: "Segoe UI", "PingFang HK", "Noto Sans SC", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, #e7f7f4 0, transparent 35%),
+    linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+  line-height: 1.6;
+}
+
+.hero, main, footer {
+  width: min(920px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.hero {
+  padding: 4.5rem 0 2rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  letter-spacing: -0.03em;
+}
+
+.tagline {
+  max-width: 38rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid rgba(29, 42, 47, 0.08);
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  font-weight: 600;
+}
+
+nav a:hover { color: var(--accent); }
+
+main {
+  display: grid;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+section {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(29, 42, 47, 0.05);
+}
+
+h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.card {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(29, 42, 47, 0.08);
+}
+.card:first-of-type { border-top: 0; padding-top: 0; }
+.card h3 { margin: 0 0 0.25rem; font-size: 1.05rem; }
+.meta { margin: 0 0 0.35rem; color: var(--muted); font-size: 0.92rem; }
+
+.chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0;
+  margin: 0;
+}
+.chips li {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+a { color: var(--accent); }
+footer {
+  padding: 0 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .hero { padding-top: 3rem; }
+  section { padding: 1.25rem; }
+}
+
+</style>
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">HKUST · Computer Science &amp; Finance (DDP)</p>
+    <h1>ZHANG Hanrui</h1>
+    <p class="tagline">張涵瑞 · aspiring CS + Finance student building clear systems and useful tools.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Hi, I'm Hanrui. I'm a first-year student at HKUST in the double degree programme in
+        Computer Science and Finance. I care about clear thinking, careful work, and learning
+        by building small projects.
+      </p>
+      <p>
+        Outside class I enjoy tutoring and community service, including volunteer teaching in Henan.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article class="card">
+        <h3>The Hong Kong University of Science and Technology</h3>
+        <p class="meta">2026 – Present</p>
+        <p>BEng Computer Science &amp; BSc Finance (Double Degree Programme)</p>
+      </article>
+      <article class="card">
+        <h3>Po Leung Kuk Wu Chung College</h3>
+        <p class="meta">2019 – 2026</p>
+        <p>Secondary school · strong focus on Mathematics, Chemistry, and Physics</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills &amp; Interests</h2>
+      <ul class="chips">
+        <li>Mathematics</li>
+        <li>Problem solving</li>
+        <li>HTML &amp; CSS</li>
+        <li>Cantonese · Mandarin · English</li>
+        <li>Tutoring</li>
+        <li>Community service</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hzhanghw@connect.ust.hk">hzhanghw@connect.ust.hk</a></p>
+      <p>GitHub: <a href="https://github.com/huoyandou" target="_blank" rel="noopener">huoyandou</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for COMP4900 Training Module #2 · Basic HTML/CSS and Personal Website Building</p>
+  </footer>
+</body>
+</html>
